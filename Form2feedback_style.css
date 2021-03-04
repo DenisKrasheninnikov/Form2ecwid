@@ -1,61 +1,90 @@
 #container {
- 	margin: 0 auto;
- 	border: 3px solid #EEEEEE;
- 	width: 800px;
- 	-webkit-birder-radius: 6px;
- 	-moz-border-radius: 6px;
- 	border-radius: 6px; 
+	margin: 0 auto;
+	border: 3px solid #EEEEEE;
+	width: 800px;
+	-webkit-birder-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px; 
 }
 
 input, textarea {
- 	border: solid 1px #CCCCCC;
- 	margin-left: 10px;
- 	padding: 4px;
- 	outline: 0;
- 	font: Verdana, Geneva, sans-serif;
- 	width: 200px;
- 	background: #F9F9F9;
- 	-webkit-birder-radius: 4px;
- 	-moz-border-radius: 4px;
- 	border-radius: 4px;
+	border: solid 1px #CCCCCC;
+	margin-left: 1px;
+	padding: 4px;
+	outline: 0;
+	font: Verdana, Geneva, sans-serif;
+	width: 200px;
+	background: #F9F9F9;
+	-webkit-birder-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+body {
+	padding: 4em;
+	background: #e5e5e5;
+	font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+label {
+	display: block;
+}
+
+input {
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 3px 5px;
+	box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+	width: 190px;
 }
 
 textarea {
 	width: 400px;
- 	height: 150px;
- 	line-height: 150%;
+	height: 150px;
+	line-height: 150%;
 }
 
-.send input {
- 	width: auto;
- 	margin-bottom: 10px;
- 	border: 2px solid #E0E0F3;
- 	font: Verdana, Geneva, sans-serif;
- 	background-color: #E5E5F8;
+[type="date"] {
+	background:#F9F9F9 url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+	display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
 }
 
-p label {
- 	margin-left: 10px;
- 	font-style: italic;
- 	color: #c0c0c0;
-}
- 
-.name input {
- 	margin-top: 10px;
-}
-
-input:hover, textarea:hover, input:focus, textarea:focus {
- 	border-color: #A0A0A0;
-}
-
-.send input:hover {
- 	border: 2px solid #C0C0E3;
+#submit {
+	font-family: sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 0px;
+	text-decoration: none;
+	box-shadow: 0px 1px 3px #666666;
+	-webkit-box-shadow: 0px 1px 3px #666666;
+	-moz-box-shadow: 0px 1px 3px #666666;
+	text-shadow: 1px 1px 3px #666666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ce1515), to(#8b0d0d));
+	background: -moz-linear-gradient(top, #ce1515, #8b0d0d);
 }
 
-input:hover, textarea:hover, input:focus, textarea:focus {
- 	border-color: #A0A0A0;
+#submit:hover {
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#8b0d0d), to(#ce1515));
+	background: -moz-linear-gradient(top, #8b0d0d, #ce1515)
 }
- 
-.send input:hover {
- 	border: 2px solid #C0C0E3;
+#respond input[type=text], textarea {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #DDDDDD;
+}
+#respond input[type=text]:focus, textarea:focus {
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(81, 203, 238, 1);
 }
