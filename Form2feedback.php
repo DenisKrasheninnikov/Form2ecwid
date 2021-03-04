@@ -11,27 +11,31 @@
 		<h1 class="settings-page__title">Форма обратной связи</h1>
 
 		<div class="named-area__body">
-			<input type="text" name="name" id="name" value="Имя" tabindex="1" />
+			<input type="text" name="name" id="name" value="Имя" onblur="if(this.value.length == 0) this.value = 'Имя'" onfocus="if(this.value == 'Имя') this.value = '' "/>
+			<label for="name">Имя</label>
 		</div>
 
 		<div class="named-area__body">
-			<input type="text" name="email" id="email" value="Email" tabindex="2" />
+			<input type="text" name="email" id="email" value="name@example.com" onblur="if(this.value.length == 0) this.value = 'name@example.com'" onfocus="if(this.value == 'name@example.com') this.value = '' " />
+			<label for="email">E-Mail</label>
 		</div>
 
 		<div class="named-area__body">
-			<input type="text" name="tel" id="tel" value="Телефон" tabindex="3" />
+			<input type="text" name="tel" id="tel" value="Телефон" onblur="if(this.value.length == 0) this.value = 'Телефон'" onfocus="if(this.value == 'Телефон') this.value = '' " />
+			<label for="tel">Телефон</label>
 		</div>
 
 		<div class="named-area__body">
-			<input type="text" name="date" id="date" value="Дата рождения" tabindex="4" />
+			<input type="text" name="date" id="date" value="Дата рождения" onblur="if(this.value.length == 0) this.value = 'Дата рождения'" onfocus="if(this.value == 'Дата рождения') this.value = '' " />
+			<label for="date">Дата рождения</label>
 		</div>
 		
 		<div class="named-area__body">
-			<textarea cols="40" rows="8" name="textarea" id="textarea" value="Поле для вопроса"></textarea>
+			<textarea cols="40" rows="8" name="textarea" id="textarea" onblur="if(this.value.length == 0) this.value = 'Текст сообщения'" onfocus="if(this.value == 'Текст сообщения') this.value=''">Текст сообщения</textarea>
 		</div>
 
 		<div class="named-area__body">
-			<button class="btn btn-medium btn-primary"><span class="svg-icon"><svg xml:space="http://www.w3.org/2000/svg" viewBox="0 0 12 12" focusable="false"><path d="M6.712 5.314H11v1.39H6.712V11H5.267V6.706H1V5.314h4.267V1h1.446v4.314z"></path></svg></span>Отправить</button>
+			<button type="button" class="btn btn-primary btn-medium" tabindex="5">Отправить</button>
 		</div>
 	</form>
 	<script src="https://d35z3p2poghz10.cloudfront.net/ecwid-sdk/css/1.3.9/ecwid-app-ui.min.js"></script>
