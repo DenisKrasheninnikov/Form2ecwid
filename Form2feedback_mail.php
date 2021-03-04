@@ -6,15 +6,15 @@ if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
 if (isset($_POST['date'])) {$date = $_POST['date'];}
 if (isset($_POST['message'])) {$message = $_POST['message'];}
  
-/* Сюда впишите свою эл. почту */
-$myaddres  = "deniskrasheninnikov73@gmail.com"; // кому отправляем
+/* Кому отправляем сообщение*/
+$myaddres  = "deniskrasheninnikov73@gmail.com"; 
  
-/* А здесь прописывается текст сообщения, \n - перенос строки */
+/* Здесь прописывается текст сообщения */
 $mes = "Сообщение: !Имя: $name\nE-Mail: $email\nТелефон: $phone\nДата рождения: $date\nСообщение: $message\n";
  
-/* А эта функция как раз занимается отправкой письма на указанный вами email */
-$sub='Заказ'; //сабж
-$email='$email'; // от кого
+/* функция отправки письма на указанный вами email */
+$sub='Заказ'; 
+$email='$email'; 
 $send = mail ($myaddres,$sub,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$email");
 
 ini_set('short_open_tag', 'On');
